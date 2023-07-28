@@ -1,0 +1,21 @@
+{
+  "Records": [
+    {
+      "messageId": "7f681dd5-f433-4b9d-9561-d7170505381d",
+      "receiptHandle": "",
+      "body": "",
+            "attributes": {
+                "ApproximateReceiveCount": "1",
+                "AWSTraceHeader": "",
+                "SentTimestamp": "1690180498355",
+                "SenderId": "",
+                "ApproximateFirstReceiveTimestamp": "1690180498359"
+            },
+            "messageAttributes": {},
+            "md5OfBody": "8a34f36b27dad4dc7823cc17a661f441",
+            "eventSource": "aws:sqs",
+            "eventSourceARN": "arn:aws:sqs:eu-central-1:527801330826:dev-c4c-task-queue-v1",
+            "awsRegion": "eu-central-1"
+        }
+    ]
+}
