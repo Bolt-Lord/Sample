@@ -1,7 +1,13 @@
-from sample import LOGS
- 
-request = {'Records': [{'messageId': '59250d13-0d65-4e28-a55c-3c51966bb28c', 'receiptHandle': 'AQEBirZRCDwEpINAxHxHGaL31f4EgzRtLhBqtDswd9EpRckMeK90xewBhbd9RzfAsPRdxknn0jM11176lnLdq2dwZdACc6Jw7+/h598HLBHONFlRKXUXEyYUO43YZg1rQ/rfo51ibP60gdSrngmK8MGjwDGtMhfcwU2CqcIw+LGCzwYjWCelrJE+tLQCGbdOyrTvxa4KzcpnYG5H0uIM7zRVECTFtyUFJcB8yJN9vlqXejOSyNtrhC7V3ThegKTOFggerLmYINpCH3a28Ucwz9hDxM/zs5yvsrxnATXnP9ISZ0vSJq5DD3msqVmkzXpX4W0V6pQ2stMTgBg+xJwtt9VGYHfEr1pOiBhxFbameNlGEb0TR1gH7aJU2YfdmPpIV50dgvppcRZ78UzZA+cTh5cfUE7BGLy4j23mscyJOwKSVjA=', 'body': '{"document": {"status": "Counsellor Uploaded", "category": "Test Results", "documentId": "e571452d-d724-4cf9-9930-4a579dfa2c38", "expiryDate": null, "modifiedOn": "2023-08-31T10:50:57.015000Z", "uploadedBy": "16516", "fileDetails": {"fileLocation": [{"key": "spmpsvcs/dc02452d-5238-45a9-8c9d-5b5cfd7cf510/50055527-EnglishTestResultsIELTS-1-20230831T105055167.pdf", "contentType": "application/pdf", "userFileName": "IELTS DOC 2.pdf", "sequenceNumber": 1}]}, "documentName": "English Test Results IELTS", "documentType": "English Test Results IELTS", "studentComments": null, "userConfirmedData": null, "counsellorComments": "", "documentUploadedOn": "2023-08-31T10:50:57.015000Z", "documentRequestedOn": "2023-08-31T10:50:55.161695Z", "requestedByCounsellorName": "", "requestedByCounsellorEmail": ""}, "eventTime": "2023-08-31T10:50:57Z", "eventType": "StudentProfile-Student-Document-Uploaded-v1", "studentDetails": {"email": "testp@test.com", "mobile": "987654321", "country": "AU", "dialCode": "+61", "lastName": "testp", "firstName": "test", "contactMeBy": ["Phone", "Email"], "crmStudentID": "50055527", "crmStudentUUID": "00163E42-24F7-1EE7-B583-6C55BEFEC16B", "studentProfileId": "dc02452d-5238-45a9-8c9d-5b5cfd7cf510"}}', 'attributes': {'ApproximateReceiveCount': '1', 'SentTimestamp': '1693479057155', 'SenderId': 'AIDAJDKHOOGYTFNBBCJTW', 'ApproximateFirstReceiveTimestamp': '1693479057160'}, 'messageAttributes': {'studentId': {'stringValue': 'no', 'stringListValues': [], 'binaryListValues': [], 'dataType': 'String'}, 'customerProfileID': {'stringValue': 'yes', 'stringListValues': [], 'binaryListValues': [], 'dataType': 'String'}, 'firstTimeSync': {'stringValue': 'no', 'stringListValues': [], 'binaryListValues': [], 'dataType': 'String'}, 'previousPrimaryEmail': {'stringValue': 'no', 'stringListValues': [], 'binaryListValues': [], 'dataType': 'String'}, 'eventType': {'stringValue': 'StudentProfile-Student-Document-Uploaded-v1', 'stringListValues': [], 'binaryListValues': [], 'dataType': 'String'}, 'preferredStudyLevel': {'stringValue': 'NA', 'stringListValues': [], 'binaryListValues': [], 'dataType': 'String'}, 'version': {'stringValue': 'v1', 'stringListValues': [], 'binaryListValues': [], 'dataType': 'String'}}, 'md5OfMessageAttributes': 'b165c1327aaa70d73ba328323ec0db6c', 'md5OfBody': 'e89191db55a0ea44273bbff6d9baa167', 'eventSource': 'aws:sqs', 'eventSourceARN': 'arn:aws:sqs:ap-southeast-1:527801330826:dev_ai_dms_event_queue_v1', 'awsRegion': 'ap-southeast-1'}]}
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import unpad
 
-log = LOGS(request, context='')
-
-print(log.get_correlation_id())
+encrypted_token = 'CE93C414E02A32023E883A728271A0BA467DBC51D9919D87B7BE7AB5BE3032603F354367751BC212D2FD1600F37F6DF5ABCE8188A5235B3F1A23EC670D2366C8'
+secret_key = 'Vf22InD6h6cCjYxR'
+encoded_secret = secret_key.encode('utf-8').hex()
+secret_key = bytes.fromhex(encoded_secret)
+iv = bytes.fromhex(encrypted_token[:32])
+ciphertext_string = bytes.fromhex(encrypted_token[32:])
+ciphertext = ciphertext_string
+cipher = AES.new(secret_key, 2, iv)
+plaintext = unpad(cipher.decrypt(ciphertext), AES.block_size)
+print(plaintext.decode())

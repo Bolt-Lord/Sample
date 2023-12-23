@@ -1,15 +1,18 @@
 """GENERATE GU TOKEN"""
 from zeep import Client
 
-URL = 'https://preprod-admissions-griffith.studylink.com/webservices/createapplicationAPI.cfc?wsdl'
-USER_NAME = 'GRIFFITH_IDP'
-PASSWORD = '5*XDdxB5Jlwx.dH'
+URL = 'https://test-admissions-griffith.studylink.com/webservices/CreateapplicationAPI.cfc?wsdl'
+USER_NAME = 'IDP_GRIFFITH'
+PASSWORD = 'Wc6rmHWtb5Hq$l.'
 PROVIDER_CODE = 'GRIFFITHDIRECT'
 
 client = Client(URL)
 print("Sending request to studylink")
 token = client.service.login(
     authusername=USER_NAME, authpassword=PASSWORD, providerCode=PROVIDER_CODE)
-if token:
+
+if token != 'Authentication Failed':
     print(token)
     print("SUCESS")
+else:
+    print("FAILED")

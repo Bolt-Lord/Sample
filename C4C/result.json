@@ -1,0 +1,136 @@
+{
+    "d": {
+        "results": [
+            {
+                "__metadata": {
+                    "uri": "https://my332876.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('67AA026F367C1EDE84D61C816E328E94')",
+                    "type": "cust.Customer",
+                    "etag": "W/\"datetimeoffset'2023-08-30T21%3A40%3A16.4681560Z'\""
+                },
+                "ObjectID": "67AA026F367C1EDE84D61C816E328E94",
+                "ETag": "/Date(1693431616468)/",
+                "RecordNumber": "",
+                "ExternalKey": "",
+                "InternalID": "50037453",
+                "UUID": "67AA026F-367C-1EDE-84D6-1C816E328E94",
+                "OscarLegacyID_KUT": "",
+                "BusinessPartnerFormattedName": "Akshay1123 J113",
+                "CategoryCode": "1",
+                "CategoryCodeText": "Person",
+                "CustomerABCClassificationCode": "3",
+                "CustomerABCClassificationCodeText": "Engage",
+                "ZKUT_HowDidYouHear_KUT": "01",
+                "ZKUT_HowDidYouHear_KUTText": "Newspaper Ad",
+                "ZKUT_WalkIn_KUT": false,
+                "ZKUT_CustomerCreatedon_KUT": "/Date(1687564800000)/",
+                "ZKUT_EBSSyncDate_KUT": null,
+                "ZKUT_EBSAccountSiteID_KUT": "",
+                "KUT_PreferredStudyCountryCode_KUT": "",
+                "RegisteredOnlineIndicator_SDK": false,
+                "KUT_PreferredStudyLanguageCode_KUT": "",
+                "KUT_PreferredStudyLanguageCode_KUTText": "",
+                "KUT_PrimaryLanguageCode_KUT": "TWI",
+                "KUT_PrimaryLanguageCode_KUTText": "Asante",
+                "TCAcceptance_KUT": true,
+                "KUT_STUDENT_ContactMethodMVCode_KUT": "IDP010,IDP020",
+                "ZKUT_PrimFinSource_KUT": "",
+                "ZKUT_PrimFinSource_KUTText": "",
+                "CreationIdentityUUID": "00163E6C-B8FE-1EDA-96A8-59CF558322A8",
+                "LastChangeDateTime": "/Date(1693431616468)/",
+                "LastChangeIdentityUUID": "02CB7C80-4232-1EDD-9CA8-53850941549F",
+                "LifeCycleStatusCode": "2",
+                "LifeCycleStatusCodeText": "Active",
+                "ZKUT_HighestEdu_KUT": "",
+                "ZKUT_HighestEdu_KUTText": "",
+                "RoleCode": "ZIDP03",
+                "RoleCodeText": "Student",
+                "AcademicTitleCode": "",
+                "AcademicTitleCodeText": "",
+                "MiddleName": "",
+                "GivenName": "Akshay1123",
+                "NationalityCountryCode": "",
+                "NationalityCountryCodeText": "",
+                "MaritalStatusCode": "",
+                "MaritalStatusCodeText": "",
+                "GenderCode": "1",
+                "GenderCodeText": "Male",
+                "BirthDate": null,
+                "BusinessPartnerUUID": "67AA026F-367C-1EDE-84D6-1C816E328E94",
+                "PrimaryEmailAddresscontent_SDK": "zafarhdsadik@gmail.com",
+                "SecondaryEmailAddresscontent1_SDK": "",
+                "BirthCountryCode1_SDK": "",
+                "BirthCountryCode1_SDKText": "",
+                "AlumniIndicator1_SDK": false,
+                "SiteID1_SDK": "India",
+                "MarketingAcceptanceIndicator1_SDK": false,
+                "ZSDK_ReferredBy1_SDK": "",
+                "ZSDK_ReferredByName_SDK": "",
+                "ZSDK_ReferralCounsellorName_SDK": "",
+                "NonEnglishName1_SDK": "",
+                "ZSDK_ReferralCounsellorUUIDcontent1_SDK": null,
+                "ZSDK_ReferralCounsellorcontent_SDK": "",
+                "FamilyName": "J113",
+                "FormOfAddressCode": "0002",
+                "FormOfAddressCodeText": "Mr.",
+                "ResidencyCountryCode1_SDK": "",
+                "ResidencyCountryCode1_SDKText": "",
+                "CreatedByName": "",
+                "LastChangedByName": "",
+                "LastChangedByBPID": "",
+                "CreatedByBPID": "",
+                "CounsellorName": "",
+                "CounsellorEmpID": "",
+                "ZSDKIsReferral": false,
+                "CounsellorUUID": null,
+                "MainAddressUUID": "3FF35999-D4C6-1EDE-86CC-500CF8E546F5",
+                "TypeCode1_SDK": "01",
+                "TypeCode1_SDKText": "Home",
+                "CounsellorBPID": "",
+                "LastChangedByUUID": null,
+                "CreatedByUUID": null,
+                "CreationDateTime": "/Date(1687626145782)/",
+                "TechUserCreatedByID": "_AWS",
+                "TechUserChangedByID": "_IDP_AWSC4CS",
+                "SiteIDCodecontent_SDK": "IN",
+                "SiteIDCodecontent_SDKText": "India",
+                "ZKUT_CounsellingMode_KUT": "",
+                "ZKUT_CounsellingMode_KUTText": "",
+                "ZKUT_SPAppIndicator_KUT": "02",
+                "ZKUT_SPAppIndicator_KUTText": "Not Installed",
+                "ZKUT_SPAppLastLogin_KUT": null,
+                "refCounsSalesOfficeID_SDK": "",
+                "ZKUT_YMrktReferalFlag_KUT": false,
+                "ZKUT_MigratedSystem_KUT": "",
+                "ZKUT_MigratedSystem_KUTText": "",
+                "ZKUT_MigratedSystemID_KUT": "",
+                "ZKUT_MigratedSystemCreatedOn_KUT": null,
+                "YMrkt_StdDestCountry_KUT": "",
+                "CustomerCurrentEmployeeResponsible": {
+                    "__deferred": {
+                        "uri": "https://my332876.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('67AA026F367C1EDE84D61C816E328E94')/CustomerCurrentEmployeeResponsible"
+                    }
+                },
+                "MarketingPermissionChannelPermission": {
+                    "__deferred": {
+                        "uri": "https://my332876.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('67AA026F367C1EDE84D61C816E328E94')/MarketingPermissionChannelPermission"
+                    }
+                },
+                "CustomerAddressInformation": {
+                    "__deferred": {
+                        "uri": "https://my332876.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('67AA026F367C1EDE84D61C816E328E94')/CustomerAddressInformation"
+                    }
+                },
+                "MarketingPermission": {
+                    "__deferred": {
+                        "uri": "https://my332876.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('67AA026F367C1EDE84D61C816E328E94')/MarketingPermission"
+                    }
+                },
+                "AddressSnapshot": {
+                    "__deferred": {
+                        "uri": "https://my332876.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('67AA026F367C1EDE84D61C816E328E94')/AddressSnapshot"
+                    }
+                }
+            }
+        ]
+    }
+}

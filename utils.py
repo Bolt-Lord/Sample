@@ -28,4 +28,4 @@ headers = {
 response = requests.request("POST", url, headers=headers, data=payload, timeout=180)
 
 # prints the response
-print(response.text)
+print(vars(response))
