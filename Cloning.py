@@ -3,7 +3,7 @@ from git.repo.base import Repo
 
 # List of repository URLs
 # Specify the path to your text file
-file_path = r"C:\Users\balasubramaniam.cs\OneDrive - IDP Education Ltd\Documents\Squad-7\NPS.txt"
+file_path = r"C:\Users\balasubramaniam.cs\OneDrive - IDP Education Ltd\Documents\Squad-7\repo list\BALA.txt"
 
 # Open the file in read mode
 with open(file_path, "r") as file:
@@ -17,7 +17,7 @@ with open(file_path, "r") as file:
         print(link)
 
         # Directory where you want to clone the repositories
-        clone_directory = r"C:\Users\balasubramaniam.cs\OneDrive - IDP Education Ltd\Desktop\Squad-7\NPS"
+        clone_directory = r"C:\Users\balasubramaniam.cs\OneDrive - IDP Education Ltd\Desktop\Squad-7\BALA"
 
         # Create the directory if it doesn't exist
         os.makedirs(clone_directory, exist_ok=True)
