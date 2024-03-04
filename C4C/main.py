@@ -1,17 +1,17 @@
 from CustomExceptions import EntityNotFound, SearchWithNotFound
 from c4c_class import C4C
 
-entity_list = ["ic", "lead", "document", "oppurtunity"]
+entity_list = ["ic", "lead", "document", "oppurtunity", "nps"]
 
-search_with_list = ["object_id", "crm_id", "email_id", "lead_with_id_url", "lead_with_crm_id", "object_id", "opp_id"]
+search_with_list = ["object_id", "crm_id", "email_id", "lead_with_id_url", "lead_with_crm_id", "object_id", "opp_id", "ticket"]
 
-DOMAIN = "dev"
+DOMAIN = "stage"
 
 ENTITY = "ic"
 
-SEARCH_WITH = "email_id"
+SEARCH_WITH = "crm_id"
 
-SEARCH_VALUE = "zafarhdsadik@gmail.com"
+SEARCH_VALUE = "64670458"
 
 if ENTITY not in entity_list:
     raise EntityNotFound(f"{ENTITY} not in the entity_list")

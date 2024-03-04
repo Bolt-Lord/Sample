@@ -36,6 +36,9 @@ class C4C:
             "oppurtunity": {
                 "crm_id": "/sap/c4c/odata/cust/v1/idpd_student_details_v1/StudentDetailsBORootCollection?$format=json&$filter=InternalID eq '{}'&$expand=StudentExtensionIdentificationDocument",
                 "opp_id": "/sap/c4c/odata/cust/v1/idpdirect/IDPDirectRootCollection?$format=json&$filter=OpportunityID eq '{}'"
+            },
+            "nps": {
+                "ticket": "/sap/c4c/odata/v1/c4codataapi/ServiceRequestCollection"
             }
         }
         self.auth_path = r"C:\Users\balasubramaniam.cs\OneDrive - IDP Education Ltd\Desktop\Sample\C4C\certificates\c4c_auth "
@@ -52,8 +55,9 @@ class C4C:
         return formatted_url
 
     def get_result(self):
-        c4c_response = requests.get(self.get_full_url(), cert=(
+        c4c_response = requests.get(self.get_full_url(), params={"$top": "1"}, headers={'Content-type': 'application/json'}, cert=(
             self.cert_loc, self.key_loc), timeout=60)
+        # print(vars(c4c_response))
         result = c4c_response.json()
         json.dumps(result["d"]["results"], indent=4)
         return json.dumps(result, indent=4)
