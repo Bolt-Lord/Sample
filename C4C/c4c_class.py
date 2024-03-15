@@ -1,5 +1,6 @@
-import requests
 import json
+
+import requests
 
 
 class C4C:
@@ -21,7 +22,7 @@ class C4C:
         self.search_with = search_with
         self.search_value = search_value
         entity_set = {
-            "ic": {
+            "student": {
                 "object_id": "/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection?$format=json&$filter=InternalID eq '{}'&$expand=CustomerAddressInformation/CustomerAddress",
                 "crm_id": "/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection?$format=json&$filter=InternalID eq '{}'",
                 "email_id": "/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection?$format=json&$filter=PrimaryEmailAddresscontent_SDK eq '{}'"
@@ -30,8 +31,8 @@ class C4C:
                 "lead_with_id_url": "/sap/c4c/odata/cust/v1/lead_pubsub_v1/LeadCollection?$format=json&$filter=ID eq '{}'",
                 "lead_with_crm_id": "/sap/c4c/odata/cust/v1/lead_pubsub_v1/LeadCollection?$format=json&$filter=PartyID eq '{}'"
             },
-            "document":{
-                "object_id" : "sap/c4c/odata/v1/c4codataapi/IndividualCustomerAttachmentFolderCollection?$format=json&$filter=ObjectID eq '{}'"
+            "document": {
+                "object_id": "sap/c4c/odata/v1/c4codataapi/IndividualCustomerAttachmentFolderCollection?$format=json&$filter=ObjectID eq '{}'"
             },
             "oppurtunity": {
                 "crm_id": "/sap/c4c/odata/cust/v1/idpd_student_details_v1/StudentDetailsBORootCollection?$format=json&$filter=InternalID eq '{}'&$expand=StudentExtensionIdentificationDocument",
@@ -39,6 +40,10 @@ class C4C:
             },
             "nps": {
                 "ticket": "/sap/c4c/odata/v1/c4codataapi/ServiceRequestCollection"
+            },
+            "employer": {
+                "id": "/sap/c4c/odata/v1/c4codataapi/EmployeeCollection?$filter=EmployeeID eq '{}'&$expand=EmployeeOrganisationalUnitAssignment,BusinessUser",
+                "object_id": "/sap/c4c/odata/v1/c4codataapi/EmployeeCollection?$filter=ObjectID eq '{}'&$expand=EmployeeOrganisationalUnitAssignment,BusinessUser"
             }
         }
         self.auth_path = r"C:\Users\balasubramaniam.cs\OneDrive - IDP Education Ltd\Desktop\Sample\C4C\certificates\c4c_auth "
@@ -57,11 +62,10 @@ class C4C:
     def get_result(self):
         c4c_response = requests.get(self.get_full_url(), params={"$top": "1"}, headers={'Content-type': 'application/json'}, cert=(
             self.cert_loc, self.key_loc), timeout=60)
-        # print(vars(c4c_response))
         result = c4c_response.json()
         json.dumps(result["d"]["results"], indent=4)
         return json.dumps(result, indent=4)
 
-    def write_output_to_file(self,response):
+    def write_output_to_file(self, response):
         with open(r'C:\Users\balasubramaniam.cs\OneDrive - IDP Education Ltd\Desktop\Sample\C4C\result.json', 'w') as output:
             output.write(response)

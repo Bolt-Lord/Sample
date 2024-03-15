@@ -3,41 +3,41 @@
         "results": [
             {
                 "__metadata": {
-                    "uri": "https://my330697.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('A98BEF5A91C11EDEB2E13E56C575D06C')",
+                    "uri": "https://my332876.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('D7C5DF4662C91EDEB8B4C42AC7162800')",
                     "type": "cust.Customer",
-                    "etag": "W/\"datetimeoffset'2024-02-14T07%3A25%3A34.5729170Z'\""
+                    "etag": "W/\"datetimeoffset'2024-03-15T01%3A13%3A36.0671990Z'\""
                 },
-                "ObjectID": "A98BEF5A91C11EDEB2E13E56C575D06C",
-                "ETag": "/Date(1707895534572)/",
+                "ObjectID": "D7C5DF4662C91EDEB8B4C42AC7162800",
+                "ETag": "/Date(1710465216067)/",
                 "RecordNumber": "",
                 "ExternalKey": "",
-                "InternalID": "64670458",
-                "UUID": "A98BEF5A-91C1-1EDE-B2E1-3E56C575D06C",
+                "InternalID": "50095433",
+                "UUID": "D7C5DF46-62C9-1EDE-B8B4-C42AC7162800",
                 "OscarLegacyID_KUT": "",
-                "BusinessPartnerFormattedName": "mnr lingala testing account",
+                "BusinessPartnerFormattedName": "Balasubramaniam Cs",
                 "CategoryCode": "1",
                 "CategoryCodeText": "Person",
                 "CustomerABCClassificationCode": "3",
                 "CustomerABCClassificationCodeText": "Engage",
-                "ZKUT_HowDidYouHear_KUT": "07",
-                "ZKUT_HowDidYouHear_KUTText": "Radio Ad",
+                "ZKUT_HowDidYouHear_KUT": "20",
+                "ZKUT_HowDidYouHear_KUTText": "Study Abroad App",
                 "ZKUT_WalkIn_KUT": false,
-                "ZKUT_CustomerCreatedon_KUT": "/Date(1707868800000)/",
+                "ZKUT_CustomerCreatedon_KUT": "/Date(1710374400000)/",
                 "ZKUT_EBSSyncDate_KUT": null,
                 "ZKUT_EBSAccountSiteID_KUT": "",
-                "KUT_PreferredStudyCountryCode_KUT": "GB",
+                "KUT_PreferredStudyCountryCode_KUT": "",
                 "RegisteredOnlineIndicator_SDK": false,
                 "KUT_PreferredStudyLanguageCode_KUT": "",
                 "KUT_PreferredStudyLanguageCode_KUTText": "",
-                "KUT_PrimaryLanguageCode_KUT": "AR",
-                "KUT_PrimaryLanguageCode_KUTText": "Arabic",
+                "KUT_PrimaryLanguageCode_KUT": "TE",
+                "KUT_PrimaryLanguageCode_KUTText": "Telugu",
                 "TCAcceptance_KUT": false,
                 "KUT_STUDENT_ContactMethodMVCode_KUT": "IDP010,IDP020",
-                "ZKUT_PrimFinSource_KUT": "",
-                "ZKUT_PrimFinSource_KUTText": "",
-                "CreationIdentityUUID": "737D478E-7199-1EDD-BADC-A301366FFA54",
-                "LastChangeDateTime": "/Date(1707895534572)/",
-                "LastChangeIdentityUUID": "737D478E-7199-1EDD-BADC-A301366FFA54",
+                "ZKUT_PrimFinSource_KUT": "06",
+                "ZKUT_PrimFinSource_KUTText": "Bank Loan",
+                "CreationIdentityUUID": "00163E6C-B8FE-1EDA-96A8-59CF558322A8",
+                "LastChangeDateTime": "/Date(1710465216067)/",
+                "LastChangeIdentityUUID": "00163E6C-B8FE-1EDA-96A8-59CF558322A8",
                 "LifeCycleStatusCode": "2",
                 "LifeCycleStatusCodeText": "Active",
                 "ZKUT_HighestEdu_KUT": "",
@@ -47,7 +47,7 @@
                 "AcademicTitleCode": "",
                 "AcademicTitleCodeText": "",
                 "MiddleName": "",
-                "GivenName": "mnr lingala",
+                "GivenName": "Balasubramaniam",
                 "NationalityCountryCode": "",
                 "NationalityCountryCodeText": "",
                 "MaritalStatusCode": "",
@@ -55,13 +55,13 @@
                 "GenderCode": "0",
                 "GenderCodeText": "Gender not known",
                 "BirthDate": null,
-                "BusinessPartnerUUID": "A98BEF5A-91C1-1EDE-B2E1-3E56C575D06C",
-                "PrimaryEmailAddresscontent_SDK": "mnrlingatest1403change@yopmail.com",
+                "BusinessPartnerUUID": "D7C5DF46-62C9-1EDE-B8B4-C42AC7162800",
+                "PrimaryEmailAddresscontent_SDK": "bharathaft@gmail.com",
                 "SecondaryEmailAddresscontent1_SDK": "",
                 "BirthCountryCode1_SDK": "",
                 "BirthCountryCode1_SDKText": "",
                 "AlumniIndicator1_SDK": false,
-                "SiteID1_SDK": "india",
+                "SiteID1_SDK": "India",
                 "MarketingAcceptanceIndicator1_SDK": false,
                 "ZSDK_ReferredBy1_SDK": "",
                 "ZSDK_ReferredByName_SDK": "",
@@ -69,35 +69,35 @@
                 "NonEnglishName1_SDK": "",
                 "ZSDK_ReferralCounsellorUUIDcontent1_SDK": null,
                 "ZSDK_ReferralCounsellorcontent_SDK": "",
-                "FamilyName": "testing account",
-                "FormOfAddressCode": "",
-                "FormOfAddressCodeText": "",
+                "FamilyName": "Cs",
+                "FormOfAddressCode": "0002",
+                "FormOfAddressCodeText": "Mr.",
                 "ResidencyCountryCode1_SDK": "",
                 "ResidencyCountryCode1_SDKText": "",
-                "CreatedByName": "Lingala Manjunath Reddy",
-                "LastChangedByName": "Lingala Manjunath Reddy",
-                "LastChangedByBPID": "8000003135",
-                "CreatedByBPID": "8000003135",
-                "CounsellorName": "Lingala Manjunath Reddy",
-                "CounsellorEmpID": "4500046847",
+                "CreatedByName": "",
+                "LastChangedByName": "",
+                "LastChangedByBPID": "",
+                "CreatedByBPID": "",
+                "CounsellorName": "",
+                "CounsellorEmpID": "",
                 "ZSDKIsReferral": false,
-                "CounsellorUUID": "737D478E-7199-1EDD-BADC-98D5A43B38F4",
-                "MainAddressUUID": "A98BEF5A-91C1-1EDE-B2E1-3E56C576506C",
+                "CounsellorUUID": null,
+                "MainAddressUUID": "D7C5DF46-62C9-1EDE-B8B4-C42AC716A800",
                 "TypeCode1_SDK": "01",
                 "TypeCode1_SDKText": "Home",
-                "CounsellorBPID": "000000000000000000000000000000000000000000000000004500046847",
-                "LastChangedByUUID": "737D478E-7199-1EDD-BADC-98D5A43B38F4",
-                "CreatedByUUID": "737D478E-7199-1EDD-BADC-98D5A43B38F4",
-                "CreationDateTime": "/Date(1707895476307)/",
-                "TechUserCreatedByID": "MANJUNATH.REDDY@IDP.COM",
-                "TechUserChangedByID": "MANJUNATH.REDDY@IDP.COM",
+                "CounsellorBPID": "",
+                "LastChangedByUUID": null,
+                "CreatedByUUID": null,
+                "CreationDateTime": "/Date(1710381414544)/",
+                "TechUserCreatedByID": "_AWS",
+                "TechUserChangedByID": "_AWS",
                 "SiteIDCodecontent_SDK": "IN",
-                "SiteIDCodecontent_SDKText": "india",
+                "SiteIDCodecontent_SDKText": "India",
                 "ZKUT_CounsellingMode_KUT": "",
                 "ZKUT_CounsellingMode_KUTText": "",
-                "ZKUT_SPAppIndicator_KUT": "02",
-                "ZKUT_SPAppIndicator_KUTText": "Not Installed",
-                "ZKUT_SPAppLastLogin_KUT": null,
+                "ZKUT_SPAppIndicator_KUT": "01",
+                "ZKUT_SPAppIndicator_KUTText": "Installed",
+                "ZKUT_SPAppLastLogin_KUT": "/Date(1710430426980)/",
                 "refCounsSalesOfficeID_SDK": "",
                 "ZKUT_YMrktReferalFlag_KUT": false,
                 "ZKUT_MigratedSystem_KUT": "",
@@ -106,30 +106,29 @@
                 "ZKUT_MigratedSystemCreatedOn_KUT": null,
                 "YMrkt_StdDestCountry_KUT": "",
                 "YMrkt_TriggerDestArrival_KUT": false,
-                "PlannedRelocationDate_SDK": null,
                 "CustomerCurrentEmployeeResponsible": {
                     "__deferred": {
-                        "uri": "https://my330697.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('A98BEF5A91C11EDEB2E13E56C575D06C')/CustomerCurrentEmployeeResponsible"
+                        "uri": "https://my332876.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('D7C5DF4662C91EDEB8B4C42AC7162800')/CustomerCurrentEmployeeResponsible"
                     }
                 },
                 "MarketingPermissionChannelPermission": {
                     "__deferred": {
-                        "uri": "https://my330697.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('A98BEF5A91C11EDEB2E13E56C575D06C')/MarketingPermissionChannelPermission"
+                        "uri": "https://my332876.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('D7C5DF4662C91EDEB8B4C42AC7162800')/MarketingPermissionChannelPermission"
                     }
                 },
                 "CustomerAddressInformation": {
                     "__deferred": {
-                        "uri": "https://my330697.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('A98BEF5A91C11EDEB2E13E56C575D06C')/CustomerAddressInformation"
+                        "uri": "https://my332876.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('D7C5DF4662C91EDEB8B4C42AC7162800')/CustomerAddressInformation"
                     }
                 },
                 "MarketingPermission": {
                     "__deferred": {
-                        "uri": "https://my330697.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('A98BEF5A91C11EDEB2E13E56C575D06C')/MarketingPermission"
+                        "uri": "https://my332876.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('D7C5DF4662C91EDEB8B4C42AC7162800')/MarketingPermission"
                     }
                 },
                 "AddressSnapshot": {
                     "__deferred": {
-                        "uri": "https://my330697.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('A98BEF5A91C11EDEB2E13E56C575D06C')/AddressSnapshot"
+                        "uri": "https://my332876.crm.ondemand.com/sap/c4c/odata/cust/v1/individualcustomer_pubsub_v1/CustomerCollection('D7C5DF4662C91EDEB8B4C42AC7162800')/AddressSnapshot"
                     }
                 }
             }
